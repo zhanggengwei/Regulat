@@ -1,0 +1,47 @@
+//
+//  main.m
+//  Regulat
+//
+//  Created by Donald on 17/3/28.
+//  Copyright © 2017年 Susu. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "RunTimeOBJC.h"
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        // insert code here...
+        NSLog(@"Hello, World!");
+        //18863014571 188****4571
+        NSError * error;
+        //NSRegularExpression * expression = [[NSRegularExpression alloc]initWithPattern:@"(\\d{3})\\d{4}(\\d{4})" options:NSRegularExpressionCaseInsensitive error:&error];
+       // NSLog(@"%@",[expression stringByReplacingMatchesInString:@"18863014571" options:NSMatchingReportProgress range:NSMakeRange(0,@"18863014571".length) withTemplate:@"$1****$2"]);188****4571
+       /*
+        NSArray * IPArr = @[@"127.0.0.1",@"3.3.3.3",@"192.168.1.2",@"245.1.3.5"];
+        //添加零
+        NSMutableArray * dataArr = [NSMutableArray new];
+        NSRegularExpression * expression = [[NSRegularExpression alloc]initWithPattern:@"(\\d+)" options:NSRegularExpressionCaseInsensitive error:&error];
+        //添加零
+        [IPArr enumerateObjectsUsingBlock:^(NSString * obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSString * content = [expression stringByReplacingMatchesInString:obj options:NSMatchingReportProgress range:NSMakeRange(0, obj.length) withTemplate:@"00$1"];
+            NSRegularExpression * regex = [[NSRegularExpression alloc]initWithPattern:@"0*(\\d{3})" options:NSRegularExpressionCaseInsensitive error:nil];
+            content = [regex stringByReplacingMatchesInString:content options:NSMatchingReportProgress range:NSMakeRange(0, content.length)  withTemplate:@"$1"];
+            [dataArr addObject:content];
+            NSLog(@"content==%@",content);
+            
+        }];
+        [dataArr sortUsingSelector:@selector(compare:)];
+        NSLog(@"dataArr == %@",dataArr);
+        */
+//        NSString * content = @"+86(186-6301-4571)";
+//        NSRegularExpression * expression = [[NSRegularExpression alloc]initWithPattern:@"\\+86" options:NSRegularExpressionCaseInsensitive error:&error];
+//        NSLog(@"%@",[expression stringByReplacingMatchesInString:content options:NSMatchingReportProgress range:NSMakeRange(0, content.length) withTemplate:@""]);
+        
+        [[RunTimeOBJC new] msg_forward];
+        
+        
+        //+86
+        
+    }
+    return 0;
+}
