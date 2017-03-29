@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface RunTimeOBJC : NSObject
+
+
+@property (nonatomic,strong) NSString * name;
+
 - (void)msg_forward;
 
 @end

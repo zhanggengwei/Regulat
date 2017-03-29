@@ -39,6 +39,8 @@ int main(int argc, const char * argv[]) {
         
         [[RunTimeOBJC new] msg_forward];
         
+        NSLog(@"%@",[RunTimeOBJC new]);
+        
         
         //+86
         
