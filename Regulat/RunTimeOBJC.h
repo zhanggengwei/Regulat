@@ -15,4 +15,6 @@
 
 - (void)msg_forward;
 
+- (void)addMethod;
+
 @end

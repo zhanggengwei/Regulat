@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
         NSError * error;
         //NSRegularExpression * expression = [[NSRegularExpression alloc]initWithPattern:@"(\\d{3})\\d{4}(\\d{4})" options:NSRegularExpressionCaseInsensitive error:&error];
        // NSLog(@"%@",[expression stringByReplacingMatchesInString:@"18863014571" options:NSMatchingReportProgress range:NSMakeRange(0,@"18863014571".length) withTemplate:@"$1****$2"]);188****4571
-       
+       /*
         NSArray * IPArr = @[@"127.0.0.1",@"3.3.3.3",@"192.168.1.2",@"245.1.3.5"];
         //添加零
         NSMutableArray * dataArr = [NSMutableArray new];
@@ -43,18 +43,34 @@ int main(int argc, const char * argv[]) {
         
         
         NSLog(@"dataArr == %@",dataArr);
+        */
         
 //        NSString * content = @"+86(186-6301-4571)";
 //        NSRegularExpression * expression = [[NSRegularExpression alloc]initWithPattern:@"\\+86" options:NSRegularExpressionCaseInsensitive error:&error];
 //        NSLog(@"%@",[expression stringByReplacingMatchesInString:content options:NSMatchingReportProgress range:NSMakeRange(0, content.length) withTemplate:@""]);
         
-//        [[RunTimeOBJC new] msg_forward];
-//        
-//        NSLog(@"%@",[RunTimeOBJC new]);
+        [[RunTimeOBJC new] addMethod];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+         [[RunTimeOBJC new]performSelector:sel_registerName("startEngine") withObject:nil];
+#pragma clang diagnostic pop
+      
+        NSLog(@"%@",[RunTimeOBJC new]);
         
+    
         
         //+86
         
     }
     return 0;
 }
+
+#define SuppressPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+

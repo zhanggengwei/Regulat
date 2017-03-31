@@ -10,6 +10,10 @@
 #import <objc/objc.h>
 #import <objc/runtime.h>
 #import <objc/message.h>
+void startEngine(id _id,SEL _cmd) {
+    NSLog(@"my car starts the engine");
+}
+
 @implementation RunTimeOBJC
 
 +(void)load
@@ -17,10 +21,28 @@
     //导入后会执行
     [super load];
     NSLog(@"%s",__func__);
+    
     Method method =  class_getInstanceMethod(self, @selector(description));
     Method replaceMethod = class_getInstanceMethod(self, @selector(descriptionMain));
     method_exchangeImplementations(method, replaceMethod);
+  
     
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if(self)
+    {
+    }
+  
+    return self;
+}
+
+- (void)addMethod
+{
+
+     class_addMethod([self class],sel_registerName("startEngine"),(IMP)startEngine, "v@:@");
 }
 
 + (void)initialize
@@ -39,8 +61,8 @@
 
 - (void)msg_forward
 {
-    /*
-     
+    
+     /*
      (1)第一种解决方案:
      在项目配置文件 -> Build Settings -> Enable Strict Checking of objc_msgSend Calls 这个字段设置为 NO, 默认为YES. 在编译你的项目就会发现问题解决了
      
@@ -90,6 +112,13 @@
     return content;
     
 }
+//+ (BOOL)resolveInstanceMethod:(SEL)sel {
+//    if (sel == sel_registerName("startEngine")) {//@:@
+//        class_addMethod([self class], sel, (IMP)startEngine, "v@:@");
+//        return YES;
+//    }
+//    return [super resolveInstanceMethod:sel];
+//}
 
 
 
