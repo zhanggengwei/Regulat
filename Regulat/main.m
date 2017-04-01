@@ -58,7 +58,11 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%@",[RunTimeOBJC new]);
         
     
-        
+        NSLog(@"%@",[NSMutableArray arrayWithObject:@""].class);
+        NSLog(@"%@",@[@"",@""].class);
+        NSLog(@"%@",@[].class);
+     
+    
         //+86
         
     }

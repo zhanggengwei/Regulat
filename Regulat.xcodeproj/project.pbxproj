@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		402B28331E8A02A400B2D6B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 402B28321E8A02A400B2D6B9 /* main.m */; };
 		402B283D1E8A2E3E00B2D6B9 /* RunTimeOBJC.m in Sources */ = {isa = PBXBuildFile; fileRef = 402B283C1E8A2E3E00B2D6B9 /* RunTimeOBJC.m */; };
+		40BE5B931E8F744A00799123 /* CustomProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BE5B921E8F744A00799123 /* CustomProtocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		402B28321E8A02A400B2D6B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		402B283B1E8A2E3E00B2D6B9 /* RunTimeOBJC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeOBJC.h; sourceTree = "<group>"; };
 		402B283C1E8A2E3E00B2D6B9 /* RunTimeOBJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeOBJC.m; sourceTree = "<group>"; };
+		40BE5B911E8F744A00799123 /* CustomProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomProtocol.h; sourceTree = "<group>"; };
+		40BE5B921E8F744A00799123 /* CustomProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomProtocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				402B28321E8A02A400B2D6B9 /* main.m */,
 				402B283B1E8A2E3E00B2D6B9 /* RunTimeOBJC.h */,
 				402B283C1E8A2E3E00B2D6B9 /* RunTimeOBJC.m */,
+				40BE5B911E8F744A00799123 /* CustomProtocol.h */,
+				40BE5B921E8F744A00799123 /* CustomProtocol.m */,
 			);
 			path = Regulat;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BE5B931E8F744A00799123 /* CustomProtocol.m in Sources */,
 				402B283D1E8A2E3E00B2D6B9 /* RunTimeOBJC.m in Sources */,
 				402B28331E8A02A400B2D6B9 /* main.m in Sources */,
 			);
@@ -255,6 +261,7 @@
 				402B28381E8A02A400B2D6B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

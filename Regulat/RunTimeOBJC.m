@@ -34,8 +34,44 @@ void startEngine(id _id,SEL _cmd) {
     self = [super init];
     if(self)
     {
+        unsigned int count = 0;
+        Class * list =  objc_copyClassList(&count);
+        for (int i = 0; i < count; i++)
+        {
+            const char * className = class_getName(list[i]);
+            //NSLog(@"%s",className);
+        }
+        
+        free(list);
     }
-  
+    NSMutableArray * array = [NSMutableArray array];
+    //数据集装
+    for (int i = 0; i < 10; i++)
+    {
+        [array addObject:@(i)];
+        NSLog(@"array==%p",array[0]);
+        
+    }
+    [array removeObjectAtIndex:0];
+    NSLog(@"array111==%p",array[0]);
+    CGFloat time = [NSDate date].timeIntervalSinceNow;
+    for (id obj in array)
+    {
+        
+    }
+    CGFloat curtime = [NSDate date].timeIntervalSinceNow;
+    NSLog(@"forin %f",curtime - time);
+    
+    
+    time = [NSDate date].timeIntervalSinceNow;
+    for (int i = 0;i<array.count;i++)
+    {
+        
+    }
+    curtime = [NSDate date].timeIntervalSinceNow;
+    NSLog(@"for  %f",curtime - time);
+    
+    
     return self;
 }
 
