@@ -18,6 +18,7 @@ void startEngine(id _id,SEL _cmd) {
 
 +(void)load
 {
+    /*
     //导入后会执行
     [super load];
     NSLog(@"%s",__func__);
@@ -26,7 +27,7 @@ void startEngine(id _id,SEL _cmd) {
     Method replaceMethod = class_getInstanceMethod(self, @selector(descriptionMain));
     method_exchangeImplementations(method, replaceMethod);
   
-    
+    */
 }
 
 - (instancetype)init

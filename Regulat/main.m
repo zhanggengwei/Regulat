@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RunTimeOBJC.h"
+#import "RequestDemo.h"
+//#import "RunTimeOBJC.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
         //18863014571 188****4571
-        NSError * error;
+       // NSError * error;
         //NSRegularExpression * expression = [[NSRegularExpression alloc]initWithPattern:@"(\\d{3})\\d{4}(\\d{4})" options:NSRegularExpressionCaseInsensitive error:&error];
        // NSLog(@"%@",[expression stringByReplacingMatchesInString:@"18863014571" options:NSMatchingReportProgress range:NSMakeRange(0,@"18863014571".length) withTemplate:@"$1****$2"]);188****4571
        /*
@@ -48,7 +49,7 @@ int main(int argc, const char * argv[]) {
 //        NSString * content = @"+86(186-6301-4571)";
 //        NSRegularExpression * expression = [[NSRegularExpression alloc]initWithPattern:@"\\+86" options:NSRegularExpressionCaseInsensitive error:&error];
 //        NSLog(@"%@",[expression stringByReplacingMatchesInString:content options:NSMatchingReportProgress range:NSMakeRange(0, content.length) withTemplate:@""]);
-        
+  /*
         [[RunTimeOBJC new] addMethod];
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
@@ -64,6 +65,23 @@ int main(int argc, const char * argv[]) {
      
     
         //+86
+   */
+        /*NSRegularExpression * regex = [[NSRegularExpression alloc]initWithPattern:@"^http:s[a-z]*" options:NSRegularExpressionCaseInsensitive error:nil];
+        NSString * str = @"http:s";
+        NSString * str1 = @"http";
+        
+        
+        NSArray<NSTextCheckingResult *> * resulst =[regex matchesInString:str options:NSMatchingReportProgress range:NSMakeRange(0, str.length)];
+        
+        NSArray<NSTextCheckingResult *> * resulst2 =[regex matchesInString:str1 options:NSMatchingReportProgress range:NSMakeRange(0, str1.length)];
+        
+        
+        NSLog(@"%@",resulst);
+        NSLog(@"%@",resulst2);
+         */
+        [RequestDemo loadRequestData];
+        
+        
         
     }
     return 0;

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		402B28331E8A02A400B2D6B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 402B28321E8A02A400B2D6B9 /* main.m */; };
 		402B283D1E8A2E3E00B2D6B9 /* RunTimeOBJC.m in Sources */ = {isa = PBXBuildFile; fileRef = 402B283C1E8A2E3E00B2D6B9 /* RunTimeOBJC.m */; };
+		40BB6E5C1E94DBAA0033D0CC /* RequestDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BB6E5B1E94DBAA0033D0CC /* RequestDemo.m */; };
+		40BB6E5F1E94E5A10033D0CC /* VDHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BB6E5E1E94E5A10033D0CC /* VDHttpRequest.m */; };
 		40BE5B931E8F744A00799123 /* CustomProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BE5B921E8F744A00799123 /* CustomProtocol.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,10 @@
 		402B28321E8A02A400B2D6B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		402B283B1E8A2E3E00B2D6B9 /* RunTimeOBJC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeOBJC.h; sourceTree = "<group>"; };
 		402B283C1E8A2E3E00B2D6B9 /* RunTimeOBJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeOBJC.m; sourceTree = "<group>"; };
+		40BB6E5A1E94DBAA0033D0CC /* RequestDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestDemo.h; sourceTree = "<group>"; };
+		40BB6E5B1E94DBAA0033D0CC /* RequestDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestDemo.m; sourceTree = "<group>"; };
+		40BB6E5D1E94E5A10033D0CC /* VDHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDHttpRequest.h; sourceTree = "<group>"; };
+		40BB6E5E1E94E5A10033D0CC /* VDHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDHttpRequest.m; sourceTree = "<group>"; };
 		40BE5B911E8F744A00799123 /* CustomProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomProtocol.h; sourceTree = "<group>"; };
 		40BE5B921E8F744A00799123 /* CustomProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomProtocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +74,10 @@
 				402B283C1E8A2E3E00B2D6B9 /* RunTimeOBJC.m */,
 				40BE5B911E8F744A00799123 /* CustomProtocol.h */,
 				40BE5B921E8F744A00799123 /* CustomProtocol.m */,
+				40BB6E5A1E94DBAA0033D0CC /* RequestDemo.h */,
+				40BB6E5B1E94DBAA0033D0CC /* RequestDemo.m */,
+				40BB6E5D1E94E5A10033D0CC /* VDHttpRequest.h */,
+				40BB6E5E1E94E5A10033D0CC /* VDHttpRequest.m */,
 			);
 			path = Regulat;
 			sourceTree = "<group>";
@@ -132,7 +142,9 @@
 			files = (
 				40BE5B931E8F744A00799123 /* CustomProtocol.m in Sources */,
 				402B283D1E8A2E3E00B2D6B9 /* RunTimeOBJC.m in Sources */,
+				40BB6E5C1E94DBAA0033D0CC /* RequestDemo.m in Sources */,
 				402B28331E8A02A400B2D6B9 /* main.m in Sources */,
+				40BB6E5F1E94E5A10033D0CC /* VDHttpRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
